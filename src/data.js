@@ -3,6 +3,7 @@ export const Information = [
         "id" : 1,
         "imageURL": "https://avatars.githubusercontent.com/u/75678744?v=4" ,
         "title" : "Muhammet Enez Kalkan",
+        "image": require("./assets/projects/loopstudio.png"),
         "position" : "FrontEnd Developer",
         "about" : "Hi, my name is Enes. I am student of Akdeniz University, Management Information Systems. I am going to graduate this academic year. I’m interested in being FrontEnd Developer and I am going to improve myself in this way. I am at a nice level in the languages following; HTML , CSS ,JavaScript and React."
     }
@@ -12,32 +13,32 @@ export const Skills = [
     {
         "id" : 1,
         "language" : "HTML",
-        "image" : require("./assets/icons8-html-5.svg")
+        "image" : "./assets/icons8-html-5.svg"
     },
     {
         "id" : 2,
         "language" : "CSS",
-        "image" : require("./assets/icons8-css3.svg")
+        "image" : "./assets/icons8-css3.svg"
     },
     {
         "id" : 3,
         "language" : "Javascript",
-        "image" : require("./assets/icons8-javascript.svg")
+        "image" : "./assets/icons8-javascript.svg",
     },
     {
         "id" : 4,
         "language" : "Scss",
-        "image" : require("./assets/icons8-sass.svg")
+        "image" : "./assets/icons8-sass.svg",
     },
     {
         "id" : 5,
         "language" : "React",
-        "image" : require("./assets/icons8-react.svg")
+        "image" : "./assets/icons8-react.svg",
     },
     {
         "id" : 6,
         "language" : "Material UI",
-        "image" : require("./assets/icons8-material-ui.svg")
+        "image" : "./assets/icons8-material-ui.svg",
     }
 ]
 
@@ -58,7 +59,7 @@ export const Projects = [
     },
     {
         "id" : 3,
-        "image": require('./assets/loopstudio.png'),
+        "image": './assets/projects/loopstudio.png',
         "title": "Loopstudio Landing Page",
         "urlDemo": "https://loopstudio-landing-page-iota.vercel.app/", 
         "urlRepo":"https://github.com/eneskalkann/loopstudio-landing-page" ,
@@ -89,22 +90,22 @@ export const Projects = [
 export const SocialMedia =[
     {
         "id" : 1,
-        "icon": require('./assets/social-media/icons8-instagram.svg'),
+        "icon": './assets/social-media/icons8-instagram.svg',
         "url":"https://www.instagram.com/eneskalkan/"
     },
     {
         "id" : 2,
-        "icon": require('./assets/social-media/icons8-linkedin-circled.svg'),
+        "icon": './assets/social-media/icons8-linkedin-circled.svg',
         "url":"https://www.linkedin.com/in/enes-kalkann/"
     },
     {
         "id" : 3,
-        "icon": require('./assets/social-media/icons8-spotify.svg'),
+        "icon": './assets/social-media/icons8-spotify.svg',
         "url":"https://open.spotify.com/user/35oykqp0galk5aif7hv6tfso2"
     },
     {
         "id" : 4,
-        "icon": require('./assets/social-media/icons8-github.svg'),
+        "icon": './assets/social-media/icons8-github.svg',
         "url":"https://github.com/eneskalkann"
     }
 ]
