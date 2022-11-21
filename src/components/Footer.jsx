@@ -1,9 +1,34 @@
 import React from 'react'
+import styled from 'styled-components'
+import { dataSocialMedia } from '../data'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <ContainerFooter>
+      {dataSocialMedia && dataSocialMedia.map(data=> {
+        return(
+          <div key={data.id}>
+            <a href={data.url} target="_blank">
+              <img src={data.icon}/>
+            </a>
+          </div>
+        )
+      })}
+    </ContainerFooter>
   )
 }
+
+const ContainerFooter = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 10px;
+  margin-bottom: 60px;
+  img{
+    width: 35px;
+  }
+`
 
 export default Footer
