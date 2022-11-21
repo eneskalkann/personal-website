@@ -1,3 +1,10 @@
+import PicCSS from './assets/icons8-css3.svg'
+import PicHTML from './assets/icons8-html-5.svg'
+import PicReact from './assets/icons8-react.svg'
+import PicJS from './assets/icons8-javascript.svg'
+import PicSCSS from './assets/icons8-sass.svg'
+import PicMUI from './assets/icons8-material-ui.svg'
+
 export const Information = [
     {
         "id" : 1,
@@ -8,40 +15,40 @@ export const Information = [
     }
 ]
 
-export const Skills = [
+export const dataSkills = [
     {
         "id" : 1,
         "language" : "HTML",
-        "image" : "./assets/icons8-html-5.svg"
+        "image" : PicHTML
     },
     {
         "id" : 2,
         "language" : "CSS",
-        "image" : "./assets/icons8-css3.svg"
+        "image" : PicCSS
     },
     {
         "id" : 3,
         "language" : "Javascript",
-        "image" : "./assets/icons8-javascript.svg",
+        "image" : PicJS
     },
     {
         "id" : 4,
-        "language" : "Scss",
-        "image" : "./assets/icons8-sass.svg",
+        "language" : "SCSS",
+        "image" : PicSCSS
     },
     {
         "id" : 5,
         "language" : "React",
-        "image" : "./assets/icons8-react.svg",
+        "image" : PicReact
     },
     {
         "id" : 6,
         "language" : "Material UI",
-        "image" : "./assets/icons8-material-ui.svg",
+        "image" : PicMUI
     }
 ]
 
-export const Projects = [
+export const dataProjects = [
     {
         "id" : 1,
         "image": "https://user-images.githubusercontent.com/75678744/195865576-093a91f2-2963-49ca-b609-0b2b08e4d83a.png",
@@ -58,7 +65,7 @@ export const Projects = [
     },
     {
         "id" : 3,
-        "image": './assets/projects/loopstudio.png',
+        "image": require('./assets/projects/loopstudio.png'),
         "title": "Loopstudio Landing Page",
         "urlDemo": "https://loopstudio-landing-page-iota.vercel.app/", 
         "urlRepo":"https://github.com/eneskalkann/loopstudio-landing-page" ,
@@ -86,7 +93,7 @@ export const Projects = [
     },
 ]
 
-export const SocialMedia =[
+export const dataSocialMedia =[
     {
         "id" : 1,
         "icon": './assets/social-media/icons8-instagram.svg',
@@ -109,10 +116,10 @@ export const SocialMedia =[
     }
 ]
 
-export const Contact = [
+export const dataContact = [
     {
         "id" : 1,
-        "title" : "Contact Me",
+        "buttonTitle" : "Say Hi!",
         "url" : "https://mail.google.com/mail/?view=cm&fs=1&to=eneskalkan36e@gmail.com&su=Subject&body=&bcc="
     }
 ]
