@@ -3,7 +3,6 @@ export const Information = [
         "id" : 1,
         "imageURL": "https://avatars.githubusercontent.com/u/75678744?v=4" ,
         "title" : "Muhammet Enez Kalkan",
-        "image": require("./assets/projects/loopstudio.png"),
         "position" : "FrontEnd Developer",
         "about" : "Hi, my name is Enes. I am student of Akdeniz University, Management Information Systems. I am going to graduate this academic year. I’m interested in being FrontEnd Developer and I am going to improve myself in this way. I am at a nice level in the languages following; HTML , CSS ,JavaScript and React."
     }
