@@ -32,14 +32,16 @@ const ContainerAbout = styled.div`
     position: relative;
     width: 160px;
     border-radius: 50%;
-    border: 2px solid #0ee2b4;
+    border: 2px solid #98ecc7;
   }
   h1{
     font-weight: 700;
+    color: #fff;
   }
   h4{
     font-weight: 600;
     letter-spacing: 1.2px;
+    color: #fff;
   }
   p{
     max-width: 650px;
