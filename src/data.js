@@ -4,6 +4,10 @@ import PicReact from './assets/icons8-react.svg'
 import PicJS from './assets/icons8-javascript.svg'
 import PicSCSS from './assets/icons8-sass.svg'
 import PicMUI from './assets/icons8-material-ui.svg'
+import PicIg from './assets/social-media/icons8-instagram.svg'
+import PicLinkedln from './assets/social-media/icons8-linkedin-circled.svg'
+import PicSpotify from './assets/social-media/icons8-spotify.svg'
+import PicGithub from './assets/social-media/icons8-github.svg'
 
 export const Information = [
     {
@@ -96,22 +100,22 @@ export const dataProjects = [
 export const dataSocialMedia =[
     {
         "id" : 1,
-        "icon": './assets/social-media/icons8-instagram.svg',
+        "icon": PicIg,
         "url":"https://www.instagram.com/eneskalkan/"
     },
     {
         "id" : 2,
-        "icon": './assets/social-media/icons8-linkedin-circled.svg',
+        "icon":PicLinkedln ,
         "url":"https://www.linkedin.com/in/enes-kalkann/"
     },
     {
         "id" : 3,
-        "icon": './assets/social-media/icons8-spotify.svg',
+        "icon": PicSpotify,
         "url":"https://open.spotify.com/user/35oykqp0galk5aif7hv6tfso2"
     },
     {
         "id" : 4,
-        "icon": './assets/social-media/icons8-github.svg',
+        "icon": PicGithub,
         "url":"https://github.com/eneskalkann"
     }
 ]
@@ -119,6 +123,7 @@ export const dataSocialMedia =[
 export const dataContact = [
     {
         "id" : 1,
+        "desc" : "I am open to new opportunities also if you have any feedback, request or question don't hesitate to get in touch with me.",
         "buttonTitle" : "Say Hi!",
         "url" : "https://mail.google.com/mail/?view=cm&fs=1&to=eneskalkan36e@gmail.com&su=Subject&body=&bcc="
     }
