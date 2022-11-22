@@ -51,6 +51,18 @@ const ContainerHome = styled.div`
     color: #fff;
   }
   }
+  @media screen and (max-width:976px){
+  background-size: 107%;
+  clip-path: polygon(0 0, 100% 0, 100% 74%, 50% 100%, 50% 100%, 0 74%);
+  }
+  @media screen and (max-width:874px){
+  background-size: 120%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%);
+  }
+  @media screen and (max-width:779px){
+  background-size: 140%;
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 50% 100%, 50% 100%, 0 84%);
+  }
 `
 
 export default Home
