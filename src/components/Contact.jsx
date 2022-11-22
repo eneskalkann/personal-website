@@ -1,15 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Footer from './Footer';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { dataContact } from '../data'
 import { FiExternalLink } from 'react-icons/fi';
 import {HiOutlineClipboardCopy} from 'react-icons/hi'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Contact() {
   
+  useEffect(() => {
+    AOS.init({duration:2000})
+  },[])
+
   return (
-    <ContactContainer id='Contact'>
+    <ContactContainer id='Contact' data-aos="fade-up">
       <span>•  Let's Talk.  •</span>
       {
         dataContact && dataContact.map(data => {
@@ -29,6 +35,7 @@ function Contact() {
           )
         })
       }
+      <span id='span-follow-me'>Don't forget follow me.</span>
       <Footer/>
     </ContactContainer>
   )
@@ -43,6 +50,11 @@ span{
     color: #98ecc7;
     margin: 90px 0 55px 0;
     font-size: 22px;
+}   
+#span-follow-me{
+  color:#fff;
+  font-size:14px;
+  margin-bottom:-17px;
 }
 .map-span{
     cursor: pointer;

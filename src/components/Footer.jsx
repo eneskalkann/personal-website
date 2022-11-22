@@ -25,7 +25,11 @@ const ContainerFooter = styled.div`
   justify-content: center;
   margin-top: 40px;
   gap: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
+  span{
+    color: #fff;
+    font-size: 12px;
+  }
   img{
     width: 35px;
   }

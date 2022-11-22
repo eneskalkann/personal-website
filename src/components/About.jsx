@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { Information } from '../data'
 
@@ -10,9 +10,11 @@ function About() {
           return(
             <div key={About.id}>
               <img src={About.imageURL} alt="eneskalkan" />
+              <div>
               <h1>{About.title}</h1>
               <h4>{About.position}</h4>
               <p>{About.about}</p>
+              </div>
             </div>
           )
         })
@@ -33,6 +35,10 @@ const ContainerAbout = styled.div`
     width: 160px;
     border-radius: 50%;
     border: 2px solid #98ecc7;
+    :hover{
+      filter: grayscale(60%);
+      transition: .5s;
+    }
   }
   h1{
     font-weight: 700;

@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { dataSkills } from '../data'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Skills() {
+  
+  useEffect(() => {
+    AOS.init({duration:2000})
+  },[])
+  
   return (
-    <ContainerSkills name="Skills">
+    <ContainerSkills name="Skills" data-aos="fade-up">
       <span>•  Skills  •</span>
       <Data>
       {
@@ -47,7 +54,7 @@ const Data = styled.div`
     border: 2px solid #98ecc7;
     width: 220px;
     height: 70px;
-    border-radius: 10px;
+    border-radius: 13px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -65,6 +72,9 @@ const Data = styled.div`
   img{
     margin-right: 20px;
     width:40px;
+  }
+  @media screen and (max-width:732px){
+    grid-template-columns: repeat(2, 1fr);
   }
 `
 

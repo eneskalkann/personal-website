@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { dataProjects } from '../data'
 import styled from 'styled-components'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import {CgArrowTopRightO} from 'react-icons/cg'
+
 
 function Projects() {
+
+  useEffect(() => {
+    AOS.init({duration:2000})
+  },[])
+
   return (
-    <ContainerProjects name="Projects">
+    <ContainerProjects name="Projects" data-aos="fade-up">
         <span>•  Projects  •</span>
         <Data>
         {
           dataProjects && dataProjects.map(data => {
             return(
-              <div className='datas' key={data.id}>
+              <div className='datas' key={data.id} data-aos="fade-up">
                 <img src={data.image} alt="" />
                 <h3>{data.title}</h3>
                 <div className='buttons'>
@@ -22,6 +31,9 @@ function Projects() {
           })
         }
         </Data>
+        <div id='view-more' data-aos="fade-up">
+          <a href="https://github.com/eneskalkann">View More<CgArrowTopRightO/></a>
+        </div>
     </ContainerProjects>
   )
 }
@@ -36,6 +48,20 @@ span{
     margin: 90px 0 55px 0;
     font-size: 22px;
 }
+#view-more{
+  margin-top: 30px;
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #98ecc7;
+    padding: 12px 20px;
+    border-radius:13px;
+    gap: 7px;
+  }
+}
 `
 
 const Data = styled.div`
@@ -46,8 +72,8 @@ const Data = styled.div`
   text-align: center;
   .datas{
     width: 350px;
-    height: 320px;
-    border: 2px solid #98ecc7;
+    height: 330px;
+    background: #343845;
     border-radius:10px;
     color: white;
     .buttons{
@@ -56,15 +82,22 @@ const Data = styled.div`
       gap: 10px;
     }
     button{
-      padding: 7px 13px;
-      width: 120px;
-      background-color: #98ecc7;
+      padding: 12px 19px;
+      width: 150px;
+      background-color: #292C36;
       border: none;
-      border-radius:4px;
+      border-radius:13px;
+      margin-bottom: 20px;
+      white-space: nowrap;
+      :hover{
+        background: #98ecc7;
+        transition: .4s;
+      }
       a{
         text-decoration: none;
         color: #fff;
         font-weight: 700;
+        letter-spacing: .4px;
       }
     }
     img{
@@ -77,6 +110,12 @@ const Data = styled.div`
     margin-top: 13px;
    }
   }
+  
+  @media screen and (max-width:732px){
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
 `
+
 
 export default Projects
