@@ -16,7 +16,7 @@ export const Information = [
         "title" : "Muhammet Enez Kalkan",
         "position" : "FrontEnd Developer",
         "about" : "Hi there, my name is Muhammet Enez. I'm FrontEnd Developer based in Antalya. I started to my education in deparment of Management Infromation Systems at Akdeniz University in September 2019. I am currently 4th grade student.",
-        "about2" : "I've been improve myself as a FrontEnd Developer for about two years. I am at nice level in the languages following: HTML,CSS,Javascript and ReactJS.I am also learning NextJS now , speaking of learning i love learning new things for web and mobile.",
+        "about2" : "I've been improve myself as a FrontEnd Developer for about two years. I am at nice level in the languages following: HTML,CSS,JavaScript and ReactJS.I am also learning NextJS now , speaking of learning i love learning new things for web and mobile.",
     }
 ]
 
