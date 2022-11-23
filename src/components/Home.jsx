@@ -4,7 +4,6 @@ import Nav from './Nav'
 import img from "../assets/emojihand.webp"
 import backgroundImage from "../assets/background.png"
 import backgroundImageTablet from "../assets/background-tablet.png"
-import backgroundImageMobile from "../assets/background-mobile.png"
 
 function Home() {
   return (
