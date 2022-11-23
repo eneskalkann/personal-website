@@ -38,9 +38,9 @@ const ContainerHome = styled.div`
     color: #98ecc7;
     font-weight: 800;
     letter-spacing: 1.2px;
-    height: 300px;
     img{
       width: 30px;
+      padding: 4px;
     }
   }
   h1{
