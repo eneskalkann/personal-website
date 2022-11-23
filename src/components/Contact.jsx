@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Footer from './Footer';
+import ScrollToTop from '../hook/ScrollToTop'
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { dataContact } from '../data'
 import { FiExternalLink } from 'react-icons/fi';
@@ -35,8 +36,9 @@ function Contact() {
           )
         })
       }
-      <span id='span-follow-me'>Don't forget follow me.</span>
+      <span id='span-follow-me'>Don't forget to follow me.</span>
       <Footer/>
+      <ScrollToTop/>
     </ContactContainer>
   )
 }
@@ -93,11 +95,22 @@ span{
       border: 2px solid #98ecc7;
       justify-content: center;
       border-radius: 13px;
+      font-weight: 700;
       :hover{
         background-color: #98ecc7;
         transition: .5s;
       }
     }
+}
+@media screen and (max-width:520px) {
+  .desc{
+    max-width: 400px;
+  }
+}
+@media screen and (max-width:418px) {
+  .desc{
+    max-width: 300px;
+  }
 }
 `
 

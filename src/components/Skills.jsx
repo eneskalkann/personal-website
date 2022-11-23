@@ -47,7 +47,7 @@ const Data = styled.div`
   grid-auto-rows: auto;
   grid-gap: 1.3rem;
   justify-content: center;
-  width: 400px;
+  max-width: 400px;
   grid: 2;
   margin: 0;
   .div-border{
@@ -75,6 +75,31 @@ const Data = styled.div`
   }
   @media screen and (max-width:732px){
     grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width:481px) {
+  .div-border{
+    width: 200px;
+    height: 60px;
+  }
+  }
+  @media screen and (max-width:450px) {
+  .div-border{
+    width: 170px;
+    height: 55px;
+  }
+  }
+  @media screen and (max-width:380px) {
+  .div-border{
+    width: 160px;
+    height: 55px;
+  }
+  }
+  @media screen and (max-width:357px) {
+    grid-template-columns: repeat(1, 1fr);
+    .div-border{
+    width: 220px;
+    height: 75px;
+    }
   }
 `
 

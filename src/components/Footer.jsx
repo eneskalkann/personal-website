@@ -25,7 +25,7 @@ const ContainerFooter = styled.div`
   justify-content: center;
   margin-top: 40px;
   gap: 10px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
   span{
     color: #fff;
     font-size: 12px;

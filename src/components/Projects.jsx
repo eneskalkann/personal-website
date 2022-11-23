@@ -3,7 +3,7 @@ import { dataProjects } from '../data'
 import styled from 'styled-components'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import {CgArrowTopRightO} from 'react-icons/cg'
+import { FiExternalLink } from 'react-icons/fi';
 
 
 function Projects() {
@@ -32,7 +32,7 @@ function Projects() {
         }
         </Data>
         <div id='view-more' data-aos="fade-up">
-          <a href="https://github.com/eneskalkann">View More<CgArrowTopRightO/></a>
+          <a href="https://github.com/eneskalkann">View More<FiExternalLink/></a>
         </div>
     </ContainerProjects>
   )
@@ -60,6 +60,11 @@ span{
     padding: 12px 20px;
     border-radius:13px;
     gap: 7px;
+    font-weight: 700;
+    :hover{
+        background-color: #98ecc7;
+        transition: .5s;
+    }
   }
 }
 `
@@ -114,6 +119,16 @@ const Data = styled.div`
   @media screen and (max-width:732px){
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
+  }
+  @media screen and (max-width:362px){
+    .datas{
+    width: 320px;
+    height: 330px;
+    img{
+    width: 320px;
+    height: 210px;
+   }
+    }
   }
 `
 

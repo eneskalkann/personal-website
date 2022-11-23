@@ -14,6 +14,7 @@ function About() {
               <h1>{About.title}</h1>
               <h4>{About.position}</h4>
               <p>{About.about}</p>
+              <p>{About.about2}</p>
               </div>
             </div>
           )
@@ -50,8 +51,38 @@ const ContainerAbout = styled.div`
     color: #fff;
   }
   p{
-    max-width: 650px;
+    max-width: 700px;
+    letter-spacing: .3px;
     color: #878787;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  @media screen and (max-width:763px) {
+  p{
+    max-width: 600px;
+  }
+  }
+  @media screen and (max-width:619px) {
+  p{
+    max-width: 500px;
+  }
+  }
+  @media screen and (max-width:516px) {
+  p{
+    max-width: 400px;
+  }
+  }
+  @media screen and (max-width:446px) {
+  p{
+    text-align: center;
+    max-width: 350px;
+  }
+  }
+  @media screen and (max-width:414px) {
+  margin-top: -83px;
+  }
+  @media screen and (max-width:391px) {
+  margin-top: -80px;
   }
 `
 

@@ -14,7 +14,7 @@ function Nav() {
                 </Link>
                 </li>
                 <li className="item">
-                <Link to="About" spy={true} smooth={true} offset={-100} duration={2000}>
+                <Link to="About"  className='margins' spy={true} smooth={true} offset={-100} duration={2000}>
                  About
                 </Link>
                 </li>
@@ -24,7 +24,7 @@ function Nav() {
                 </Link>
                 </li>
                 <li className="item">
-                <Link to="Projects" spy={true} smooth={true} offset={-50} duration={2000}>
+                <Link to="Projects" className='margins' spy={true} smooth={true} offset={-50} duration={2000}>
                  Projects
                 </Link>
                 </li>
