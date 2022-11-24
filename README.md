@@ -25,6 +25,6 @@ I created and coded my website inspired by a sample project in Figma. I used sev
  
  ## Design
  <p float="left">
- <img src="https://www.toptal.com/developers/img-resize/view/851aaf24d720ace0e0e292b6d53f3068.png" />
+ <img src="https://www.toptal.com/developers/img-resize/view/851aaf24d720ace0e0e292b6d53f3068.png" /> <br/>
  <img src="https://www.toptal.com/developers/img-resize/view/9cd85c188c6f8833e922d4916bc3b4cd.png" height="400" />
 </p>
