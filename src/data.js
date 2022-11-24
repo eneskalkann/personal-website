@@ -129,3 +129,12 @@ export const dataContact = [
         "url" : "https://mail.google.com/mail/?view=cm&fs=1&to=eneskalkan36e@gmail.com&su=Subject&body=&bcc="
     }
 ]
+
+export const dataNotFound = [
+    {
+        "id" : 1,
+        "title" : "404_",
+        "message" : "You are lost",
+        "buttonTitle" : "Back to Home Page"
+    }
+]
