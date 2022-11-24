@@ -37,6 +37,7 @@ const ContainerNotFound = styled.div`
   h1{
     color: #98ecc7;
     font-size: 172px;
+    margin-top: -20px;
   }
   p{
     margin-top: -100px;
@@ -67,8 +68,8 @@ const ContainerNotFound = styled.div`
     background-position: top;
     background: url(${backgroundImageTablet});
     background-size: 100%;
-    .container-header{
-      margin-top: 37.7%;
+    h1{
+      margin-top: -40px;
     }
   }
 `;
