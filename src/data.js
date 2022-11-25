@@ -3,7 +3,7 @@ import PicHTML from './assets/icons8-html-5.svg'
 import PicReact from './assets/icons8-react.svg'
 import PicJS from './assets/icons8-javascript.svg'
 import PicSCSS from './assets/icons8-sass.svg'
-import PicMUI from './assets/icons8-material-ui.svg'
+import PicTailwind from './assets/icons8-tailwind-css.svg'
 import PicIg from './assets/social-media/icons8-instagram.svg'
 import PicLinkedln from './assets/social-media/icons8-linkedin-circled.svg'
 import PicSpotify from './assets/social-media/icons8-spotify.svg'
@@ -48,8 +48,8 @@ export const dataSkills = [
     },
     {
         "id" : 6,
-        "language" : "Material UI",
-        "image" : PicMUI
+        "language" : "Tailwind CSS",
+        "image" : PicTailwind
     }
 ]
 
