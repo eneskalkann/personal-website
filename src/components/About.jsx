@@ -9,7 +9,7 @@ function About() {
         Information && Information.map(About => {
           return(
             <div key={About.id}>
-              <img src={About.imageURL} alt="eneskalkan" />
+              <img src={About.imageURL} alt="enezkalkan" />
               <div>
               <h1>{About.title}</h1>
               <h4>{About.position}</h4>

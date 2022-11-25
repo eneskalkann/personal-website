@@ -10,7 +10,7 @@ function Home() {
     <ContainerHome> 
       <Nav/>
       <div className="container-div">
-      <h1 className="container-header">Hi there <img src={img} alt="" /> </h1>
+      <h1 className="container-header">Hi there <img src={img} alt="emoji-hand" /> </h1>
       <h1>My name is Muhammet Enez</h1>
       <p className='paragraph'>I am a Frontend Developer</p>
       </div>
