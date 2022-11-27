@@ -21,7 +21,7 @@ I created and coded my website inspired by a sample project in Figma. I used sev
  ```
  ##### Start Project
  ```
- npm run dev
+ npm start
  ```
  
  ## Design
