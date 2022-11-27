@@ -8,6 +8,7 @@ I created and coded my website inspired by a sample project in Figma. I used sev
   
 
 #### Packages
+  * styled-components(5.3.6)
   * react-scroll(1.8.8)
   * react-icons(4.6.0)
   * react-spinners(0.13.6)
