@@ -1,7 +1,4 @@
 # <h1 align="center">Welcome the My Personal Website</h1>
-<div align="center">
- [Here](https://www.enezkalkan.com/)
-</div>
 
 I created and coded my website inspired by a sample project in Figma. I used several different package in this project.
 
