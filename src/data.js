@@ -15,8 +15,10 @@ export const Information = [
         "imageURL": "https://avatars.githubusercontent.com/u/75678744?v=4" ,
         "title" : "Muhammet Enez Kalkan",
         "position" : "FrontEnd Developer",
-        "about" : "Hi there, my name is Muhammet Enez. I'm FrontEnd Developer based in Tekirdag. I started to my education in deparment of Management Infromation Systems at Akdeniz University in September 2019. I am currently 4th grade student.",
+        "about" : "Hi there, my name is Muhammet Enez. I'm FrontEnd Developer based in Tekirdag. I started to my education in department of Management Infromation Systems at Akdeniz University in September 2019. I am currently 4th grade student.",
         "about2" : "I've been improve myself as a FrontEnd Developer for about two years. I am at nice level in the languages following: HTML,CSS,JavaScript and ReactJS.I am also learning NextJS now , speaking of learning i love learning new things for web and mobile.",
+        "buttonTitle" : "Check Out My Resume",
+        "resumeUrl" : "https://drive.google.com/file/d/1I8AE8T6xpBtL1lA3DgHnbShVVj32c5L6/view?usp=sharing"
     }
 ]
 

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { Information } from '../data'
+import { FiExternalLink } from 'react-icons/fi';
 
 function About() {
   return (
@@ -15,6 +16,9 @@ function About() {
               <h4>{About.position}</h4>
               <p>{About.about}</p>
               <p>{About.about2}</p>
+              <div className='resume'>
+                <a target="_blank" href={About.resumeUrl}>{About.buttonTitle} <FiExternalLink className='icon'/></a>
+              </div>
               </div>
             </div>
           )
@@ -53,9 +57,28 @@ const ContainerAbout = styled.div`
   p{
     max-width: 700px;
     letter-spacing: .3px;
-    color: #878787;
+    color: #939598;
     font-weight: 400;
     font-size: 18px;
+  }
+  .resume{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    a{
+      border-radius: 13px;
+      background-color: #343845;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: #fff;
+      :hover{
+        color: #98ecc7;
+        transition: .4s;
+      }
+    }
   }
   @media screen and (max-width:763px) {
   p{
