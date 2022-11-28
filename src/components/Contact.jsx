@@ -69,7 +69,7 @@ span{
 }
 .desc{
   margin: 10px 0 -40px 0;
-  color: #878787;
+  color: #939598;
   text-align: center;
   font-weight: 400;
   font-size: 20px;
