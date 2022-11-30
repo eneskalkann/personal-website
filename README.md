@@ -1,6 +1,6 @@
 # <h1 align="center">Welcome the My Personal Website</h1>
 
-I created and coded my website inspired by a sample project in Figma. I used several different package in this project.
+I created and coded my website inspired by a sample project in Figma. I used several different package in this project and also i added google-site-verification for SEO.
 
 #### Library
   * React(18.2.0)
