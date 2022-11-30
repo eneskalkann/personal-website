@@ -35,6 +35,9 @@ const ContainerScroll = styled.div`
             }
         }
     }
+    @media screen and (min-height:896px){
+        margin-bottom: 100px;
+    }
 `
 
 export default ScrollToTop
