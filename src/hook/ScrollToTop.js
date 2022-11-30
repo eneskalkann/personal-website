@@ -12,7 +12,7 @@ function ScrollToTop() {
     };
   return (
     <ContainerScroll>
-        <button onClick={scrollTop}>Back to top <IoIosArrowDropup className='icon' /></button>
+        <a onClick={scrollTop}>Back to top <IoIosArrowDropup className='icon' /></a>
     </ContainerScroll>
   )
 }
