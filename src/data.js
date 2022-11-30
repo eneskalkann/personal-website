@@ -109,7 +109,7 @@ export const dataSocialMedia =[
     {
         "id" : 2,
         "icon":PicLinkedln ,
-        "url":"https://www.linkedin.com/in/enes-kalkann/"
+        "url":"https://www.linkedin.com/in/enez-kalkan/"
     },
     {
         "id" : 3,
