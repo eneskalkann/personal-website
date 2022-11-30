@@ -29,7 +29,7 @@ function Contact() {
                 </span>
               </CopyToClipboard>
               <div className="contact-me">
-              <a href={data.url} target="_blank">
+              <a href={data.url} target="_blank" rel="noreferrer">
               <p>{data.buttonTitle}</p><FiExternalLink /></a>
               </div>
             </div>

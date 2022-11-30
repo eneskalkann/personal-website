@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Information } from '../data'
 import { FiExternalLink } from 'react-icons/fi';
@@ -17,7 +17,7 @@ function About() {
               <p>{About.about}</p>
               <p>{About.about2}</p>
               <div className='resume'>
-                <a target="_blank" href={About.resumeUrl}>{About.buttonTitle} <FiExternalLink className='icon'/></a>
+                <a target="_blank" rel="noreferrer" href={About.resumeUrl}>{About.buttonTitle} <FiExternalLink className='icon'/></a>
               </div>
               </div>
             </div>

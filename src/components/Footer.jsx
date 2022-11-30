@@ -8,8 +8,8 @@ function Footer() {
       {dataSocialMedia && dataSocialMedia.map(data=> {
         return(
           <div key={data.id}>
-            <a href={data.url} target="_blank">
-              <img src={data.icon}/>
+            <a href={data.url} target="_blank" rel="noreferrer">
+              <img src={data.icon} alt="enezkalkan" />
             </a>
           </div>
         )

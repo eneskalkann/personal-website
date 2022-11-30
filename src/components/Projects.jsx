@@ -23,8 +23,8 @@ function Projects() {
                 <img src={data.image} alt="" />
                 <h3>{data.title}</h3>
                 <div className='buttons'>
-                  <button><a href={data.urlDemo} target="_blank">View Demo</a></button>
-                  <button><a href={data.urlRepo}>View on GitHub</a></button>
+                  <button><a href={data.urlDemo} target="_blank" rel="noreferrer">View Demo</a></button>
+                  <button><a href={data.urlRepo} target="_blank" rel="noreferrer">View on GitHub</a></button>
                 </div>
               </div>
             )
@@ -32,7 +32,7 @@ function Projects() {
         }
         </Data>
         <div id='view-more' data-aos="fade-up">
-          <a href="https://github.com/eneskalkann">View More<FiExternalLink/></a>
+          <a href="https://github.com/eneskalkann" target="_blank" rel="noreferrer">View More<FiExternalLink/></a>
         </div>
     </ContainerProjects>
   )
