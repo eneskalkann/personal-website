@@ -13,10 +13,10 @@
   justify-content: center;
   margin: 30px 0px 0 0;
   text-align: center;
+  transition: 0.3s;
 }
 .menu .items :hover {
   color: #98ecc7;
-  transition: 0.3s;
 }
 .menu .items .item {
   cursor: pointer;

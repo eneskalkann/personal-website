@@ -60,9 +60,9 @@ const Data = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: .5s;
     :hover{
       background-color: #98ecc7;
-      transition: .5s;
     }
   }
   h4{

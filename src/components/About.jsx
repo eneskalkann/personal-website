@@ -40,9 +40,9 @@ const ContainerAbout = styled.div`
     width: 160px;
     border-radius: 50%;
     border: 2px solid #98ecc7;
+    transition: .5s;
     :hover{
       filter: grayscale(60%);
-      transition: .5s;
     }
   }
   h1{
@@ -74,9 +74,9 @@ const ContainerAbout = styled.div`
       padding: 14px 20px;
       text-decoration: none;
       color: #fff;
+      transition: .4s;
       :hover{
         color: #98ecc7;
-        transition: .4s;
       }
     }
   }

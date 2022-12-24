@@ -61,9 +61,9 @@ span{
     border-radius:13px;
     gap: 7px;
     font-weight: 700;
+    transition: .5s;
     :hover{
         background-color: #98ecc7;
-        transition: .5s;
     }
   }
 }
@@ -94,9 +94,9 @@ const Data = styled.div`
       border-radius:13px;
       margin-bottom: 20px;
       white-space: nowrap;
+      transition: .4s;
       :hover{
         background: #98ecc7;
-        transition: .4s;
       }
       a{
         text-decoration: none;
