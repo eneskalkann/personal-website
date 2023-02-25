@@ -17,6 +17,10 @@ function Contact() {
 
   return (
     <ContactContainer id='Contact' data-aos="fade-up">
+      <div className='spotify'>
+        <span>•  This Song For You  •</span>
+        <iframe style={{borderRadius:'12px', zIndex:'1'}} src="https://open.spotify.com/embed/track/2eWHHPZS4pb7mEMcow4bqT?utm_source=generator" width="420px" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
       <span>•  Let's Talk.  •</span>
       {
         dataContact && dataContact.map(data => {
@@ -48,6 +52,10 @@ display: flex;
 flex-direction: column;
 position: relative;
 align-items: center;
+.spotify{
+  display:flex;
+  flex-direction: column;
+}
 span{
     color: #98ecc7;
     margin: 90px 0 55px 0;
