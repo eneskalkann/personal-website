@@ -114,6 +114,9 @@ span{
   .desc{
     max-width: 400px;
   }
+  iframe{
+    width: 300px
+}
 }
 @media screen and (max-width:418px) {
   .desc{
