@@ -1,73 +1,102 @@
-import React, { useEffect } from 'react'
-import { dataProjects } from '../data'
-import styled from 'styled-components'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { FiExternalLink } from 'react-icons/fi';
-
+import React, { useEffect } from "react";
+import { dataProjects } from "../data";
+import styled from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { FiExternalLink } from "react-icons/fi";
+// import { getRepos } from "../helper/api";
 
 function Projects() {
+  // get repos
+  /*const [repos, setRepos] = useState([]);
 
   useEffect(() => {
-    AOS.init({duration:2000})
-  },[])
+    getRepos().then((res) => {
+      setRepos(res.data);
+      console.log(res.data);
+    });
+  }, []);*/
+  // map repos like this
+  /* {repos.map((repo) => (
+          <li key={repo.id}>
+            <a href={repo.html_url}>{repo.name}</a>
+          </li>
+        ))} */
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   return (
     <ContainerProjects name="Projects" data-aos="fade-up">
-        <span>•  Projects  •</span>
-        <Data>
-        {
-          dataProjects && dataProjects.map(data => {
-            return(
-              <div className='datas' key={data.id} data-aos="fade-up">
+      <span>• Projects •</span>
+      <Data>
+        {dataProjects &&
+          dataProjects.map((data) => {
+            return (
+              <div className="datas" key={data.id} data-aos="fade-up">
                 <img src={data.image} alt="" />
                 <h3>{data.title}</h3>
-                <div className='buttons'>
-                  <button><a href={data.urlDemo} target="_blank" rel="noreferrer">View Demo</a></button>
-                  <button><a href={data.urlRepo} target="_blank" rel="noreferrer">View on GitHub</a></button>
+                <div className="buttons">
+                  <button>
+                    <a href={data.urlDemo} target="_blank" rel="noreferrer">
+                      View Demo
+                    </a>
+                  </button>
+                  <button>
+                    <a href={data.urlRepo} target="_blank" rel="noreferrer">
+                      View on GitHub
+                    </a>
+                  </button>
                 </div>
               </div>
-            )
-          })
-        }
-        </Data>
-        <div id='view-more' data-aos="fade-up">
-          <a href="https://github.com/eneskalkann" target="_blank" rel="noreferrer">View More<FiExternalLink/></a>
-        </div>
+            );
+          })}
+      </Data>
+      <div id="view-more" data-aos="fade-up">
+        <a
+          href="https://github.com/eneskalkann"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View More
+          <FiExternalLink />
+        </a>
+      </div>
     </ContainerProjects>
-  )
+  );
 }
 
 const ContainerProjects = styled.div`
-display: flex;
-flex-direction: column;
-position: relative;
-align-items: center;
-span{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  span {
     color: #98ecc7;
     margin: 90px 0 55px 0;
     font-size: 22px;
-}
-#view-more{
-  margin-top: 30px;
-  a{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #98ecc7;
-    padding: 12px 20px;
-    border-radius:13px;
-    gap: 7px;
-    font-weight: 700;
-    transition: .5s;
-    :hover{
+  }
+  #view-more {
+    margin-top: 30px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      text-decoration: none;
+      color: #fff;
+      border: 2px solid #98ecc7;
+      padding: 12px 20px;
+      border-radius: 13px;
+      gap: 7px;
+      font-weight: 700;
+      transition: 0.5s;
+      :hover {
         background-color: #98ecc7;
+      }
     }
   }
-}
-`
+`;
 
 const Data = styled.div`
   display: grid;
@@ -75,62 +104,61 @@ const Data = styled.div`
   grid-auto-rows: auto;
   grid-gap: 1rem;
   text-align: center;
-  .datas{
+  .datas {
     width: 350px;
     height: 330px;
     background: #343845;
-    border-radius:10px;
+    border-radius: 10px;
     color: white;
-    .buttons{
+    .buttons {
       justify-content: center;
       display: flex;
       gap: 10px;
     }
-    button{
+    button {
       padding: 12px 19px;
       width: 150px;
-      background-color: #292C36;
+      background-color: #292c36;
       border: none;
-      border-radius:13px;
+      border-radius: 13px;
       margin-bottom: 20px;
       white-space: nowrap;
-      transition: .4s;
-      :hover{
+      transition: 0.4s;
+      :hover {
         background: #98ecc7;
       }
-      a{
+      a {
         text-decoration: none;
         color: #fff;
         font-weight: 700;
-        letter-spacing: .4px;
+        letter-spacing: 0.4px;
       }
     }
-    img{
-    width: 350px;
-    height: 210px;
-    border-top-left-radius:7px;
-    border-top-right-radius:7px;
-   }
-   h3{
-    margin-top: 13px;
-   }
+    img {
+      width: 350px;
+      height: 210px;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+    }
+    h3 {
+      margin-top: 13px;
+    }
   }
-  
-  @media screen and (max-width:732px){
+
+  @media screen and (max-width: 732px) {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
   }
-  @media screen and (max-width:362px){
-    .datas{
-    width: 320px;
-    height: 330px;
-    img{
-    width: 320px;
-    height: 210px;
-   }
+  @media screen and (max-width: 362px) {
+    .datas {
+      width: 320px;
+      height: 330px;
+      img {
+        width: 320px;
+        height: 210px;
+      }
     }
   }
-`
+`;
 
-
-export default Projects
+export default Projects;
