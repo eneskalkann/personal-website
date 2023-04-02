@@ -1,18 +1,11 @@
-import {React, useEffect } from "react";
+import axios from "axios";
 
-useEffect(() => {
-    const url = 'https://api.github.com/users/eneskalkann/repos'
-
-
-    const fetchDatas = async () => {
-        try{
-            const response = await fetch(url);
-            const data = await response.json();
-            console.log(data)
-        }
-        catch(err){
-            console.log('error',err)
-        }
-    }
-    fetchDatas()
+const api = axios.create({
+    baseURL: 'https://api.github.com/'
 })
+
+const getRepos = () => {
+    return api.get('users/eneskalkann/repos')
+}
+
+export {getRepos};
