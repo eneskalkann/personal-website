@@ -15,8 +15,7 @@ export const Information = [
         "imageURL": "https://avatars.githubusercontent.com/u/75678744?v=4" ,
         "title" : "Muhammet Enez Kalkan",
         "position" : "FrontEnd Developer",
-        "about" : "Hi there, my name is Muhammet Enez. I'm FrontEnd Developer based in Tekirdag. I started to my education in department of Management Infromation Systems at Akdeniz University in September 2019. I am currently 4th grade student.",
-        "about2" : "I've been improve myself as a FrontEnd Developer for about two years. I am at nice level in the languages following: HTML,CSS,JavaScript and ReactJS.I am also learning NextJS now , speaking of learning i love learning new things for web and mobile.",
+        "about" : "I'm a passionate Frontend Developer based in Tekirdag. I like to deal with web and mobile related works and always improve myself with new knowledge. Developing my creativity and knowledge by being in this world gives me self-reliance and assists me to do my job with love.",
         "buttonTitle" : "Check Out My Resume",
         "resumeUrl" : "https://drive.google.com/file/d/1I8AE8T6xpBtL1lA3DgHnbShVVj32c5L6/view?usp=sharing"
     }
