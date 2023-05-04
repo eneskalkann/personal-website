@@ -4,6 +4,9 @@ import PicReact from './assets/icons8-react.svg'
 import PicJS from './assets/icons8-javascript.svg'
 import PicSCSS from './assets/icons8-sass.svg'
 import PicTailwind from './assets/icons8-tailwind-css.svg'
+import PicBootsrap from './assets/icons8-bootstrap.svg'
+import PicNext from './assets/icons8-next.svg'
+import PicRedux from './assets/icons8-redux.svg'
 import PicIg from './assets/social-media/icons8-instagram.svg'
 import PicLinkedln from './assets/social-media/icons8-linkedin-circled.svg'
 import PicSpotify from './assets/social-media/icons8-spotify.svg'
@@ -51,6 +54,21 @@ export const dataSkills = [
         "id" : 6,
         "language" : "Tailwind CSS",
         "image" : PicTailwind
+    },
+    {
+        "id" : 7,
+        "language" : "Next",
+        "image" : PicNext
+    },
+    {
+        "id" : 8,
+        "language" : "Bootstrap",
+        "image" : PicBootsrap
+    },
+    {
+        "id" : 9,
+        "language" : "Redux",
+        "image" : PicRedux
     }
 ]
 
@@ -64,10 +82,10 @@ export const dataProjects = [
     },
     {
         "id" : 2,
-        "image": "https://user-images.githubusercontent.com/75678744/169774983-606366a5-71f1-4ab5-9637-4b75e55dca26.png",
-        "title": "Expenses Chart Component",
-        "urlDemo": "https://eneskalkann-expenses-chart-component.vercel.app/", 
-        "urlRepo":"https://github.com/eneskalkann/expenses-chart-component" ,
+        "image": "https://user-images.githubusercontent.com/75678744/236335861-19c3dfbe-8458-4b9e-911d-93771b503567.png",
+        "title": "Rest Countries",
+        "urlDemo": "https://rest-countries-app-nine.vercel.app/", 
+        "urlRepo":"https://github.com/eneskalkann/REST-Countries-API-app" 
     },
     {
         "id" : 3,
