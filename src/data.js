@@ -20,7 +20,7 @@ export const Information = [
         "position" : "FrontEnd Developer",
         "about" : "I'm a passionate Frontend Developer based in Tekirdag. I like to deal with web and mobile related works and always improve myself with new knowledge. Developing my creativity and knowledge by being in this world gives me self-reliance and assists me to do my job with love.",
         "buttonTitle" : "Check Out My Resume",
-        "resumeUrl" : "https://drive.google.com/file/d/1I8AE8T6xpBtL1lA3DgHnbShVVj32c5L6/view?usp=sharing"
+        "resumeUrl" : "https://drive.google.com/file/d/185iBpntMKmZebfher1q1hI_A0DdsCrdB/view?usp=sharing"
     }
 ]
 
