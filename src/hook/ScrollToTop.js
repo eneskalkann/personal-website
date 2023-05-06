@@ -19,6 +19,7 @@ function ScrollToTop() {
 
 const ContainerScroll = styled.div`
     display: none;
+    cursor: pointer;
     @media screen and (max-width:700px){
         display: flex;
         a{
@@ -28,7 +29,11 @@ const ContainerScroll = styled.div`
             font-size: 21px;
             padding-bottom: 5px;
             border-bottom: 2px solid #98ecc7;
+            transition: all .5s;
             margin-bottom: 80px;
+            :hover{
+                color: #98ecc7;
+            }
             .icon{
                 color: #98ecc7;
                 margin-left: 8px;

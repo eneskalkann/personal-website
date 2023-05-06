@@ -72,6 +72,7 @@ const ContainerProjects = styled.div`
       transition: 0.5s;
       :hover {
         background-color: #98ecc7;
+        color: #343845;
       }
     }
   }
@@ -108,6 +109,7 @@ const Data = styled.div`
       letter-spacing: 0.4px;
       :hover {
         background: #98ecc7;
+        color: #292c36 !important;
       }
     }
     img {
