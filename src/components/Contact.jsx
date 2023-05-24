@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Footer from "./Footer";
 import ScrollToTop from "../hook/ScrollToTop";
@@ -10,23 +10,39 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Contact() {
+  const [copy, setCopy] = useState(false);
+
+  const handleCopy = () => {
+    setCopy(true);
+    setTimeout(() => {
+      setCopy(false);
+    }, 1500);
+  };
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
   return (
     <ContactContainer id="Contact" data-aos="fade-up">
-      <span>• Let's Talk. •</span>
+      <span className="texts">• Let's Talk. •</span>
       {dataContact &&
         dataContact.map((data) => {
           return (
             <div key={data.id}>
               <p className="desc">{data.desc}</p>
-              <CopyToClipboard text="eneskalkan36e@gmail.com">
-                <span title="Click and Copy" className="map-span">
-                  eneskalkan36e@gmail.com
-                  <HiOutlineClipboardCopy />
-                </span>
+              <CopyToClipboard
+                text="eneskalkan36e@gmail.com"
+                onCopy={handleCopy}
+              >
+                <div title="Click and Copy" className="copy-clipboard texts">
+                  <div className="copy-clipboard-text">
+                    <span>eneskalkan36e@gmail.com</span>
+                    <HiOutlineClipboardCopy />
+                  </div>
+                  <span className="copy-clipboard-copied">
+                    {copy && <p>Copied</p>}
+                  </span>
+                </div>
               </CopyToClipboard>
               <div className="contact-me">
                 <a href={data.url} target="_blank" rel="noreferrer">
@@ -37,7 +53,9 @@ function Contact() {
             </div>
           );
         })}
-      <span id="span-follow-me">Don't forget to follow me.</span>
+      <span className="texts" id="span-follow-me">
+        Don't forget to follow me.
+      </span>
       <Footer />
       <ScrollToTop />
     </ContactContainer>
@@ -49,7 +67,7 @@ const ContactContainer = styled.div`
   flex-direction: column;
   position: relative;
   align-items: center;
-  span {
+  .texts {
     color: #98ecc7;
     margin: 90px 0 55px 0;
     font-size: 22px;
@@ -59,14 +77,22 @@ const ContactContainer = styled.div`
     font-size: 14px;
     margin-bottom: -17px;
   }
-  .map-span {
+  .copy-clipboard {
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 6px;
     color: #fff;
     margin-bottom: 20px;
     justify-content: center;
+    &-text {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    &-copied {
+      font-size: 12px;
+    }
   }
   .desc {
     margin: 10px 0 -40px 0;
